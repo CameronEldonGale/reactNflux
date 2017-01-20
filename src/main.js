@@ -2,6 +2,7 @@ $ = jQuery = require('jquery');
 var React = require('react');
 var Home = require('./components/homePage.jsx');
 var About = require('./components/about/aboutPage.jsx');
+var Header = require('./common/header.jsx');
 
 (function(win) {
   'use strict';
@@ -18,6 +19,7 @@ var About = require('./components/about/aboutPage.jsx');
 
       return (
         <div>
+          <Header />
           <Child />
         </div>
       );
